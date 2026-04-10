@@ -1,0 +1,45 @@
+// CBSE Class 10 English Configuration
+// Generated from top_200_exam_universe_seed.csv
+
+export const EXAM_CONFIG = {
+  examId: "EXAM187",
+  slug: "cbse-class-10-english",
+  name: "CBSE Class 10 English",
+  fullName: "CBSE 10 English",
+  alias: "CBSE 10 English",
+  family: "CBSE",
+  category: "School exams",
+  subcategory: "Subject exam",
+  country: "India",
+  region: "South Asia",
+  languages: ["English"],
+  estimatedAnnualTakers: "very high",
+  testingWindow: "Feb-Mar",
+  schedulePattern: "Annual",
+  ageGroup: "14-16",
+  targetUser: "School student",
+  delivery: "Paper-based",
+  questionTypes: ["Reading","writing","literature"],
+  adaptivity: "Linear",
+  sections: "Single subject",
+  scoringMode: "Marks/grades",
+  essayOrSpeaking: "Writing",
+  ipRisk: "Low",
+  contentReuse: "english_language",
+  uiEngine: "paper_reading_writing",
+  monetizationPotential: "High",
+  tier: "Tier 2",
+  launchWave: "Wave 3",
+  themeColor: "#D97706",
+  themeColorDark: "#B45309",
+  localizationComplexity: "High",
+  offlineNeeded: true,
+  mobileFirst: true,
+  locale: "en",
+  isRTL: false,
+  freemiumGate: {
+    dailyQuestions: 10,
+  },
+} as const;
+
+export type ExamConfig = typeof EXAM_CONFIG;
