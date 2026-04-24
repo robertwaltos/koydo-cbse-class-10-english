@@ -20,7 +20,7 @@ export interface TopicManifest {
   title: string;
   icon: string;
   color: string;
-  questionTarget: number;
+  minQuestionCount: number;
   activityTypes: ActivityType[];
 }
 
@@ -44,7 +44,7 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Reading Comprehension",
     icon: "📖",
     color: "#DC2626",
-    questionTarget: 700,
+    minQuestionCount: 700,
     activityTypes: ["multiple_choice", "reading_passage"],
   },
   {
@@ -53,7 +53,7 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Grammar & Usage",
     icon: "📝",
     color: "#7C3AED",
-    questionTarget: 600,
+    minQuestionCount: 600,
     activityTypes: ["multiple_choice", "cloze_deletion"],
   },
   {
@@ -62,7 +62,7 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Essay Writing",
     icon: "✍️",
     color: "#059669",
-    questionTarget: 500,
+    minQuestionCount: 500,
     activityTypes: ["essay", "rubric_assessment"],
   },
   {
@@ -71,7 +71,7 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Vocabulary in Context",
     icon: "🔤",
     color: "#D97706",
-    questionTarget: 500,
+    minQuestionCount: 500,
     activityTypes: ["multiple_choice", "flashcard_deck"],
   },
   {
@@ -80,8 +80,9 @@ export const CONTENT_MANIFEST: ContentManifest = {
     title: "Rhetoric & Style",
     icon: "🎭",
     color: "#DC2626",
-    questionTarget: 400,
+    minQuestionCount: 400,
     activityTypes: ["multiple_choice", "reading_passage"],
   }
   ],
 };
+
